@@ -4,5 +4,8 @@ return {
     dependencies = {
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
-    }
+    },
+  config = function()
+    vim.keymap.set('n', 'df', ':Neotree filesystem reveal left<CR>', {})
+  end
 }

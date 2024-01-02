@@ -15,20 +15,6 @@ local opts = {}
 
 require("lazy").setup("plugins")
 
--- setting usage keys for telescope
-
--- tree-sitter settings
-local configs = require("nvim-treesitter.configs")
-configs.setup({
-ensure_installed = { "c", "lua","css", "javascript", "html" },
-highlight = { enable = true },
-indent = { enable = true },
-})
-
--- keymap for neo-tree
-vim.keymap.set('n', 'df', ':Neotree filesystem reveal left<CR>', {})
-
-
 -- Essential vim commands 
 vim.cmd("set clipboard=unnamed")
 vim.cmd("inoremap jk <ESC>")
