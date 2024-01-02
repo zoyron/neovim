@@ -24,7 +24,15 @@ local plugins = {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
 -- or                              , branch = '0.1.x',
       dependencies = { 'nvim-lua/plenary.nvim' }
+},
+{
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
     }
+}
 }
 local opts = {}
 
@@ -41,6 +49,10 @@ ensure_installed = { "c", "lua","css", "javascript", "html" },
 highlight = { enable = true },
 indent = { enable = true },
 })
+
+-- keymap for neo-tree
+vim.keymap.set('n', 'df', ':Neotree filesystem reveal left<CR>', {})
+
 
 -- Essential vim commands 
 vim.cmd.colorscheme "tokyonight-night"
