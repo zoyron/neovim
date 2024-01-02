@@ -10,6 +10,8 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
+
+-- Plugings list
 local plugins = {
 {
   "folke/tokyonight.nvim",
@@ -17,6 +19,7 @@ local plugins = {
   priority = 1000,
   opts = {},
 },
+{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
 {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
 -- or                              , branch = '0.1.x',
@@ -31,6 +34,13 @@ require("lazy").setup(plugins, opts)
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
 
+-- tree-sitter settings
+local configs = require("nvim-treesitter.configs")
+configs.setup({
+ensure_installed = { "c", "lua","css", "javascript", "html" },
+highlight = { enable = true },
+indent = { enable = true },
+})
 
 -- Essential vim commands 
 vim.cmd.colorscheme "tokyonight-night"
