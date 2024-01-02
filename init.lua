@@ -16,8 +16,6 @@ local opts = {}
 require("lazy").setup("plugins")
 
 -- setting usage keys for telescope
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<C-p>', builtin.find_files, {})
 
 -- tree-sitter settings
 local configs = require("nvim-treesitter.configs")
@@ -32,7 +30,6 @@ vim.keymap.set('n', 'df', ':Neotree filesystem reveal left<CR>', {})
 
 
 -- Essential vim commands 
-vim.cmd.colorscheme "tokyonight-night"
 vim.cmd("set clipboard=unnamed")
 vim.cmd("inoremap jk <ESC>")
 vim.cmd("set tabstop=2")
