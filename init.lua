@@ -16,10 +16,21 @@ local plugins = {
   lazy = false,
   priority = 1000,
   opts = {},
-}
+},
+{
+    'nvim-telescope/telescope.nvim', tag = '0.1.5',
+-- or                              , branch = '0.1.x',
+      dependencies = { 'nvim-lua/plenary.nvim' }
+    }
 }
 local opts = {}
+
 require("lazy").setup(plugins, opts)
+
+-- setting usage keys for telescope
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+
 
 -- Essential vim commands 
 vim.cmd.colorscheme "tokyonight-night"
