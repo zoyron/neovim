@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local opts = {}
 
-require("lazy").setup(plugins)
+require("lazy").setup("plugins")
 
 -- setting usage keys for telescope
 local builtin = require('telescope.builtin')
