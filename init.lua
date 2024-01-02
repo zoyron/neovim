@@ -13,25 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 
 local opts = {}
 
+require("vim-options")
 require("lazy").setup("plugins")
 
--- Essential vim commands 
-vim.cmd("set clipboard=unnamed")
-vim.cmd("inoremap jk <ESC>")
-vim.cmd("set tabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("set expandtab")
-vim.cmd("set number")
-vim.cmd("set rnu")
-vim.cmd("nnoremap <CR> :nohlsearch<CR><CR>")
-vim.cmd("nnoremap j gj")
-vim.cmd("nnoremap k gk")
-vim.cmd("set backspace=eol,start,indent")
-vim.cmd("set ruler")
-vim.cmd("set linebreak")
-vim.cmd("set showcmd")
-vim.cmd("set noshowmode")
-vim.cmd("set hlsearch")
-vim.cmd("set wrap")
-vim.cmd("set whichwrap+=<,>,h,l")
-vim.cmd("set laststatus=2")
