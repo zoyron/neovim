@@ -8,6 +8,10 @@ return {
       sections = {
         lualine_y = {},
         lualine_x = {'encoding', 'filetype'}
+      },
+      tabline = {
+        lualine_a = {'buffers'},
+        lualine_z = {'tabs'}
       }
     }
   end
