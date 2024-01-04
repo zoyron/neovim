@@ -3,7 +3,11 @@ return {
   config = function()
     require('lualine').setup {
       options = {
-        theme = 'nord'
+        theme = 'nord',
+        { 
+          section_separators = '',
+          component_separators = '' 
+        }
       },
       sections = {
         lualine_y = {},
@@ -13,7 +17,6 @@ return {
         lualine_a = {'buffers'},
         lualine_z = {'tabs'}
       }
-    },
-    vim.cmd("set laststatus=3")
+    }
   end
 }
