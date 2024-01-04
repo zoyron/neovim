@@ -13,6 +13,7 @@ return {
         lualine_a = {'buffers'},
         lualine_z = {'tabs'}
       }
-    }
+    },
+    vim.cmd("set laststatus=3")
   end
 }
