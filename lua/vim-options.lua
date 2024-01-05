@@ -14,6 +14,7 @@ vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true })
 opt.backspace = 'eol,start,indent'
 opt.linebreak = true
 opt.showmode = false
+opt.showcmd = true
 opt.hlsearch = true
 opt.wrap = true
 opt.whichwrap:append('<,>,h,l')
