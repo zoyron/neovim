@@ -1,21 +1,30 @@
 -- Essential vim commands 
-vim.cmd("set clipboard=unnamed")
-vim.cmd("inoremap jk <ESC>")
-vim.cmd("set tabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("set expandtab")
-vim.cmd("set number")
-vim.cmd("set rnu")
-vim.cmd("nnoremap <CR> :nohlsearch<CR><CR>")
-vim.cmd("nnoremap j gj")
-vim.cmd("nnoremap k gk")
-vim.cmd("set backspace=eol,start,indent")
-vim.cmd("set ruler")
-vim.cmd("set linebreak")
-vim.cmd("set showcmd")
-vim.cmd("set noshowmode")
-vim.cmd("set hlsearch")
-vim.cmd("set wrap")
-vim.cmd("set whichwrap+=<,>,h,l")
-vim.cmd("set t_Co=256")
-vim.cmd("set laststatus=2")
+local opt = vim.opt
+
+opt.clipboard = 'unnamed'
+vim.api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true })
+opt.expandtab = true
+opt.tabstop = 2
+opt.shiftwidth = 2
+opt.number = true
+opt.relativenumber = true
+vim.api.nvim_set_keymap('n', '<CR>', ':nohlsearch<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = true })
+vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true })
+opt.backspace = 'eol,start,indent'
+opt.linebreak = true
+opt.showmode = false
+opt.hlsearch = true
+opt.wrap = true
+opt.whichwrap:append('<,>,h,l')
+opt.termguicolors = true
+opt.laststatus = 2
+opt.cursorline = true
+-- Disable cursorline in insert mode
+vim.cmd([[
+  augroup CursorLineInsertMode
+    autocmd!
+    autocmd InsertEnter * set nocursorline
+    autocmd InsertLeave * set cursorline
+  augroup END
+]])
