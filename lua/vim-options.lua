@@ -16,6 +16,7 @@ opt.linebreak = true
 opt.showmode = false
 opt.showcmd = true
 opt.hlsearch = true
+opt.ignorecase = true
 opt.wrap = true
 opt.whichwrap:append('<,>,h,l')
 opt.termguicolors = true
