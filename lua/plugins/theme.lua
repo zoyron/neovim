@@ -1,10 +1,21 @@
 
+--return {
+--  "folke/tokyonight.nvim",
+  --lazy = false,
+  --priority = 1000,
+  --opts = {},
+  --config = function()
+    --vim.cmd.colorscheme "tokyonight-night"
+  --end
+--}
+
 return {
-  "folke/tokyonight.nvim",
+  "craftzdog/solarized-osaka.nvim",
   lazy = false,
   priority = 1000,
   opts = {},
   config = function()
-    vim.cmd.colorscheme "tokyonight-night"
+    transparent = true,
+    vim.cmd.colorscheme "solarized-osaka"
   end
 }
