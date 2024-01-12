@@ -67,7 +67,7 @@ return {
 				}),
 				["<tab>"] = cmp_next,
 				["<down>"] = cmp_next,
-				["<C-p>"] = cmp_prev,
+				["<S-tab>"] = cmp_prev,
 				["<up>"] = cmp_prev,
 			},
 			sources = {
