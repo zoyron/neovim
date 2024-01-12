@@ -57,18 +57,20 @@ return {
 				end,
 			},
 			mapping = {
-				["<C-d>"] = cmp.mapping.scroll_docs(-4),
-				["<C-f>"] = cmp.mapping.scroll_docs(4),
-				["<S-Space>"] = cmp.mapping.complete(),
+				["<C-d>"] = cmp.mapping.scroll_docs(-2),
+				["<C-f>"] = cmp.mapping.scroll_docs(2),
+        ["<S-Space>"] = cmp.mapping.complete(),
 				["<C-e>"] = cmp.mapping.close(),
 				["<CR>"] = cmp.mapping.confirm({
 					behavior = cmp.ConfirmBehavior.Replace,
 					select = true,
 				}),
+        -- configuring cmp like super-tab
 				["<tab>"] = cmp_next,
 				["<down>"] = cmp_next,
 				["<S-tab>"] = cmp_prev,
 				["<up>"] = cmp_prev,
+        -- super-tab configuration ends here
 			},
 			sources = {
 				{ name = "nvim_lsp_signature_help", group_index = 1 },
