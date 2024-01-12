@@ -11,11 +11,9 @@ opt.relativenumber = true
 vim.api.nvim_set_keymap('n', '<CR>', ':nohlsearch<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = true })
 vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true })
-opt.backspace = 'eol,start,indent'
 opt.linebreak = true
 opt.showmode = false
 opt.showcmd = true
-opt.hlsearch = true
 opt.ignorecase = true
 opt.wrap = true
 opt.whichwrap:append('<,>,h,l')
