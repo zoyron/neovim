@@ -9,22 +9,22 @@
   --end
 --}
 
-return {
-  "craftzdog/solarized-osaka.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {},
-  config = function()
-    transparent = true,
-    vim.cmd.colorscheme "solarized-osaka"
-  end
-}
-
 --return {
---  "gambhirsharma/vesper.nvim",
+--  "craftzdog/solarized-osaka.nvim",
 --  lazy = false,
 --  priority = 1000,
---  config = function ()
---   vim.cmd([[colorscheme vesper]])
+--  opts = {},
+--  config = function()
+--    transparent = true,
+--    vim.cmd.colorscheme "solarized-osaka"
 --  end
 --}
+
+return {
+  "gambhirsharma/vesper.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function ()
+   vim.cmd([[colorscheme vesper]])
+  end
+}
