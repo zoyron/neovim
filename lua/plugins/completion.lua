@@ -18,16 +18,16 @@ return {
   {
     "hrsh7th/nvim-cmp",
     event = "InsertEnter",
-    --dependencies = {
+    dependencies = {
     --  "hrsh7th/cmp-nvim-lsp-signature-help",
-    --  "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-nvim-lsp",
     --  "hrsh7th/cmp-buffer",
     --  "hrsh7th/cmp-path",
     --  "hrsh7th/cmp-nvim-lua",
     --  "windwp/nvim-autopairs",
     --  "onsails/lspkind-nvim",
     --  { "roobert/tailwindcss-colorizer-cmp.nvim", config = true }
-    --},
+    },
     config = function()
       local cmp = require("cmp")
       require("luasnip.loaders.from_vscode").lazy_load()
