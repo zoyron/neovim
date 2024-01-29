@@ -24,7 +24,6 @@ return {
     --  "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
     --  "hrsh7th/cmp-nvim-lua",
-    --  "windwp/nvim-autopairs",
     --  "onsails/lspkind-nvim",
     --  { "roobert/tailwindcss-colorizer-cmp.nvim", config = true }
     },
