@@ -1,5 +1,10 @@
 return {
   {
+      'windwp/nvim-autopairs',
+      event = "InsertEnter",
+      opts = {} -- this is equalent to setup({}) function
+  },
+  {
     "L3MON4D3/LuaSnip",
     dependencies = {
       "saadparwaiz1/cmp_luasnip",
@@ -23,8 +28,6 @@ return {
       "hrsh7th/cmp-nvim-lsp",
     --  "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
-    --  "hrsh7th/cmp-nvim-lua",
-    --  "onsails/lspkind-nvim",
     --  { "roobert/tailwindcss-colorizer-cmp.nvim", config = true }
     },
     config = function()
@@ -56,13 +59,9 @@ return {
         enabled = true,
         preselect = cmp.PreselectMode.None,
         window = {
-          completion = cmp.config.window.bordered({
-            winhighlight = "Normal:Normal,FloatBorder:LspBorderBG,CursorLine:PmenuSel,Search:None",
-          }),
-          documentation = cmp.config.window.bordered({
-            winhighlight = "Normal:Normal,FloatBorder:LspBorderBG,CursorLine:PmenuSel,Search:None",
-          }),
-        },
+              completion = cmp.config.window.bordered(),
+              documentation = cmp.config.window.bordered(),
+            },
         ---@diagnostic disable-next-line
         view = {
           entries = "bordered",
