@@ -1,7 +1,7 @@
 -- Essential vim commands 
 local opt = vim.opt
 
-opt.clipboard = 'unnamed'
+opt.clipboard = 'unnamedplus'
 vim.api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true })
 opt.expandtab = true
 opt.tabstop = 2
@@ -20,6 +20,8 @@ opt.whichwrap:append('<,>,h,l')
 opt.termguicolors = true
 opt.laststatus = 2
 opt.cursorline = true
+opt.splitbelow = true --opens the new window below the current file
+opt.splitright = true
 -- Disable cursorline in insert mode
 vim.cmd([[
   augroup CursorLineInsertMode
