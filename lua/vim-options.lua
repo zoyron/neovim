@@ -23,6 +23,7 @@ opt.laststatus = 2
 opt.cursorline = true
 opt.splitbelow = true --opens the new window below the current file
 opt.splitright = true
+opt.inccommand = "split"
 -- Disable cursorline in insert mode
 vim.cmd([[
   augroup CursorLineInsertMode
