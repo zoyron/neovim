@@ -2,6 +2,7 @@
 local opt = vim.opt
 
 opt.clipboard = 'unnamedplus'
+opt.scrolloff = 999
 vim.api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true })
 opt.expandtab = true
 opt.tabstop = 2
