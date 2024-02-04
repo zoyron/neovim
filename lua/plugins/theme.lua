@@ -15,7 +15,6 @@
 --  priority = 1000,
 --  opts = {},
 --  config = function()
---    transparent = true,
 --    vim.cmd.colorscheme "solarized-osaka"
 --  end
 --}
