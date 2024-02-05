@@ -6,7 +6,7 @@ Usage is straigtforward.
 
     git clone https://github.com/zoyron/neovim.git ~/.config/nvim
 
-*As of now, this configuration would work for mac users. Suppport for other devices would be added soon.*
+*As of now, this configuration works for mac users only. Suppport for other devices would be added soon.*
 
 ### Some must knows before using:
 
