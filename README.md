@@ -3,9 +3,10 @@
 **Have [Neovim](https://neovim.io/) pre-installed on your device**
 
 Usage is straigtforward. 
-*This works for mac only as of now, suppport for other devices would be added soon.*
 
     git clone https://github.com/zoyron/neovim.git ~/.config/nvim
+
+*As of now, this configuration would work for mac users. Suppport for other devices would be added soon.*
 
 ### Some must knows before using:
 
