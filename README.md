@@ -6,6 +6,8 @@ Usage is straigtforward.
 
     git clone https://github.com/zoyron/neovim.git ~/.config/nvim
 
+After copying the above command, run *nvim* on your terminal, and all the required plugins will be installed
+
 *As of now, this configuration works for mac users only. Suppport for other devices would be added soon.*
 
 ### Some must knows before using:
