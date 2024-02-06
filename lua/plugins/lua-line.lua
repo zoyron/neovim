@@ -8,8 +8,10 @@ return {
         section_separators = { left = '', right = ''},
       },
       sections = {
-        lualine_y = {},
-        lualine_x = {'encoding', 'filetype'}
+        lualine_b = {'branch', 'diff'},
+        lualine_c = {'filename', 'filestatus'},
+        lualine_y = {'progress'},
+        lualine_x = {'encoding','diagnostics'}
       },
       tabline = {
         lualine_a = {'buffers'},
