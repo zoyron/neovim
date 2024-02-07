@@ -8,7 +8,7 @@ Usage is straigtforward.
 
 After copying the above command, run *nvim* on your terminal, and all the required plugins will be installed
 
-*As of now, this configuration works for mac users only. Suppport for other devices would be added soon.*
+*As of now, this configuration works for mac/linux users only. Support for window devices would be added soon.*
 
 ### Some must knows before using:
 
