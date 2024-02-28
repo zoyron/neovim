@@ -1,4 +1,3 @@
-
 --return {
 --  "folke/tokyonight.nvim",
 --  lazy = false,
@@ -23,8 +22,8 @@ return {
   "shaunsingh/nord.nvim",
   lazy = false,
   priority = 1000,
-  opts = {},
+  opts = {} 
   config = function ()
     vim.cmd.colorscheme "nord"
-  end
+  end,
 }
