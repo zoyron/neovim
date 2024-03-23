@@ -18,12 +18,23 @@
 --  end
 --}
 
+--return {
+--  "shaunsingh/nord.nvim",
+--  lazy = false,
+--  priority = 1000,
+--  opts = {},
+--  config = function ()
+--    vim.cmd.colorscheme "nord"
+--    vim.g.nord_contrast = true
+--  end,
+--}
+
 return {
-  "shaunsingh/nord.nvim",
+  "rmehri01/onenord.nvim",
   lazy = false,
   priority = 1000,
   opts = {},
   config = function ()
-    vim.cmd.colorscheme "nord"
+    vim.cmd.colorscheme "onenord"
   end,
 }
