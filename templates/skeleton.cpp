@@ -9,13 +9,22 @@
 
 using namespace std;
 
+// Debugging function
 template <typename Arg1>
-void __f (const char* name, Arg1&& arg1) { cout << name << " : " << arg1 << endl; }
-template <typename Arg1, typename... Args>
-void __f (const char* names, Arg1&& arg1, Args&&... args)
-{
-	const char* comma = strchr (names + 1, ',');
-	cout.write (names, comma - names) << " : " << arg1 << " | "; __f (comma + 1, args...);
+void __f (const char* name, Arg1 arg1) { 
+    cout << name << " : " << arg1 << endl; 
+}
+
+// Overloaded function for two arguments
+template <typename Arg1, typename Arg2>
+void __f (const char* name1, Arg1 arg1, const char* name2, Arg2 arg2) { 
+    cout << name1 << " : " << arg1 << " | " << name2 << " : " << arg2 << endl; 
+}
+
+// Overloaded function for three arguments
+template <typename Arg1, typename Arg2, typename Arg3>
+void __f (const char* name1, Arg1 arg1, const char* name2, Arg2 arg2, const char* name3, Arg3 arg3) { 
+    cout << name1 << " : " << arg1 << " | " << name2 << " : " << arg2 << " | " << name3 << " : " << arg3 << endl; 
 }
 
 inline int power(int a, int b)
