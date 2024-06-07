@@ -10,7 +10,7 @@ return {
       sections = {
         lualine_b = {'branch', 'diff'},
         lualine_c = {'filename', 'filestatus'},
-        lualine_y = {'progress', 'location'},
+        lualine_y = {'progress'},
         lualine_x = {'encoding','diagnostics'}
       },
       tabline = {
