@@ -8,15 +8,15 @@
 --  end
 --}
 
---return {
---  "craftzdog/solarized-osaka.nvim",
---  lazy = false,
---  priority = 1000,
---  opts = {},
---  config = function()
---    vim.cmd.colorscheme "solarized-osaka"
---  end
---}
+return {
+  "craftzdog/solarized-osaka.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {},
+  config = function()
+    vim.cmd.colorscheme "solarized-osaka"
+  end
+}
 
 --return {
 --  "shaunsingh/nord.nvim",
@@ -29,12 +29,12 @@
 --  end,
 --}
 
-return {
-  "rmehri01/onenord.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {},
-  config = function ()
-    vim.cmd.colorscheme "onenord"
-  end,
-}
+--return {
+--  "rmehri01/onenord.nvim",
+--  lazy = false,
+--  priority = 1000,
+--  opts = {},
+--  config = function ()
+--    vim.cmd.colorscheme "onenord"
+--  end,
+--}
