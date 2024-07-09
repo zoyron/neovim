@@ -1,8 +1,8 @@
 return {
   {
-      'windwp/nvim-autopairs',
-      event = "InsertEnter",
-      opts = {} -- this is equalent to setup({}) function
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    opts = {}   -- this is equalent to setup({}) function
   },
   {
     "L3MON4D3/LuaSnip",
@@ -24,11 +24,11 @@ return {
     "hrsh7th/nvim-cmp",
     event = "InsertEnter",
     dependencies = {
-    --  "hrsh7th/cmp-nvim-lsp-signature-help",
+      --  "hrsh7th/cmp-nvim-lsp-signature-help",
       "hrsh7th/cmp-nvim-lsp",
-    --  "hrsh7th/cmp-buffer",
+      --  "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
-    --  { "roobert/tailwindcss-colorizer-cmp.nvim", config = true }
+      --  { "roobert/tailwindcss-colorizer-cmp.nvim", config = true }
     },
     config = function()
       local cmp = require("cmp")
@@ -59,9 +59,9 @@ return {
         enabled = true,
         preselect = cmp.PreselectMode.None,
         window = {
-              completion = cmp.config.window.bordered(),
-              documentation = cmp.config.window.bordered(),
-            },
+          completion = cmp.config.window.bordered(),
+          documentation = cmp.config.window.bordered(),
+        },
         ---@diagnostic disable-next-line
         view = {
           entries = "bordered",
