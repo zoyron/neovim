@@ -35,5 +35,3 @@ vim.cmd([[
   augroup END
 ]])
 
---adding C++ template
-vim.cmd('autocmd BufNewFile *.cpp 0r ~/.config/nvim/templates/skeleton.cpp | normal! 42G14|')
