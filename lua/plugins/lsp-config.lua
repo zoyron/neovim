@@ -10,10 +10,9 @@ return {
     dependencies = { "williamboman/mason.nvim" },
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
-      local lspconfig = require("lspconfig")
 
-      -- Simple manual setup for each server
-      lspconfig.lua_ls.setup({
+      -- Configure LSP servers using vim.lsp.config (Neovim 0.11+)
+      vim.lsp.config('lua_ls', {
         capabilities = capabilities,
         settings = {
           Lua = {
@@ -24,26 +23,29 @@ return {
         }
       })
 
-      lspconfig.ts_ls.setup({
+      vim.lsp.config('ts_ls', {
         capabilities = capabilities
       })
 
-      lspconfig.clangd.setup({
+      vim.lsp.config('clangd', {
         capabilities = capabilities
       })
 
-      lspconfig.pyright.setup({
+      vim.lsp.config('pyright', {
         capabilities = capabilities
       })
 
-      lspconfig.emmet_ls.setup({
+      vim.lsp.config('emmet_ls', {
         capabilities = capabilities,
         filetypes = { "html", "css", "scss", "javascript", "javascriptreact", "typescript", "typescriptreact" }
       })
 
-      lspconfig.glsl_analyzer.setup({
+      vim.lsp.config('glsl_analyzer', {
         capabilities = capabilities
       })
+
+      -- Enable the configured servers
+      vim.lsp.enable({ 'lua_ls', 'ts_ls', 'clangd', 'pyright', 'emmet_ls', 'glsl_analyzer' })
 
       -- Keymaps
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
